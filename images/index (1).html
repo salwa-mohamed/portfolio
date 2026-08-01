@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="chroma">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chameleon Works | Adaptable Digital Engineering & AI Innovation</title>
+  <meta name="description" content="Chameleon Works is an elite 10-person multi-disciplinary software startup engineering next-gen AI solutions, web platforms, cloud architectures, and brand experiences." />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦎</text></svg>" />
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <header class="navbar-header" id="navbar">
+    <div class="container nav-container">
+      <a href="#" class="brand-logo">
+        <img src="logo.jpeg" alt="Chameleon Works logo" class="brand-logo-img" />
+      </a>
+
+      <nav class="desktop-nav">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#why-us" class="nav-link">Why Us</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#team" class="nav-link">Team</a>
+        <a href="#estimator" class="nav-link">Estimator</a>
+        <a href="#portfolio" class="nav-link">Work</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Theme Selector -->
+        <div class="theme-selector-wrapper">
+          <button class="theme-btn" id="themeBtn">
+            <i data-lucide="palette"></i>
+            <span class="theme-label">Theme</span>
+          </button>
+          <div class="theme-dropdown" id="themeDropdown">
+            <div class="theme-dropdown-header">Chroma Themes</div>
+            <button class="theme-option active" data-theme-val="chroma">
+              <span class="theme-color-preview" style="background: #10B981;"></span>
+              <span>Chroma Adapt</span>
+            </button>
+            <button class="theme-option" data-theme-val="cyber">
+              <span class="theme-color-preview" style="background: #EC4899;"></span>
+              <span>Cyber Neon</span>
+            </button>
+            <button class="theme-option" data-theme-val="aurora">
+              <span class="theme-color-preview" style="background: #00E676;"></span>
+              <span>Aurora Emerald</span>
+            </button>
+            <button class="theme-option" data-theme-val="solar">
+              <span class="theme-color-preview" style="background: #F59E0B;"></span>
+              <span>Solar Flare</span>
+            </button>
+          </div>
+        </div>
+
+        <button class="btn btn-primary btn-sm desktop-cta" id="openContactBtnNav">
+          <span>Get Started</span>
+          <i data-lucide="arrow-right"></i>
+        </button>
+
+        <button class="mobile-toggle" id="mobileToggle">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu Drawer -->
+    <div class="mobile-drawer" id="mobileDrawer">
+      <a href="#about" class="mobile-link">About</a>
+      <a href="#why-us" class="mobile-link">Why Us</a>
+      <a href="#services" class="mobile-link">Services</a>
+      <a href="#team" class="mobile-link">Team</a>
+      <a href="#estimator" class="mobile-link">Estimator</a>
+      <a href="#portfolio" class="mobile-link">Work</a>
+      <a href="#faq" class="mobile-link">FAQ</a>
+      <button class="btn btn-primary w-full mt-4" id="openContactBtnMobile">
+        <span>Start a Project</span>
+        <i data-lucide="sparkles"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- ==================== HERO SECTION ==================== -->
+  <section class="hero-section">
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="glow-pill mb-6">
+          <span class="pulse-dot"></span>
+          <span>SHAPE-SHIFTING DIGITAL CREW</span>
+        </div>
+
+        <h1 class="hero-title">
+          From Vision <br />
+          <span class="gradient-text">To Value.</span>
+        </h1>
+
+        <p class="hero-description">
+          Welcome to <strong>Chameleon Works</strong> — an elite 10-person startup of senior system architects, AI leads, motion designers, and product strategists. We shape-shift our expertise to engineer high-velocity digital products.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#team" class="btn btn-primary">
+            <span>Meet Our 10 Pioneers</span>
+            <i data-lucide="users"></i>
+          </a>
+
+          <a href="#estimator" class="btn btn-secondary">
+            <span>Estimate Project</span>
+            <i data-lucide="arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="hero-stats-grid">
+          <div class="stat-card">
+            <span class="stat-number gradient-text">10</span>
+            <span class="stat-label">Senior In-House Specialists</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number gradient-text">3-6 Wks</span>
+            <span class="stat-label">Average MVP Delivery</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number gradient-text">100%</span>
+            <span class="stat-label">Clean Code & Security</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Visual Orb -->
+      <div class="hero-visual">
+        <div class="chameleon-orb-container animate-float">
+          <div class="orb-glow"></div>
+          <div class="orb-ring ring-1"></div>
+          <div class="orb-ring ring-2"></div>
+          
+          <div class="chameleon-core">
+            <span class="core-emoji">🦎</span>
+            <div class="core-badge">Chameleon Core v2.4</div>
+          </div>
+
+          <div class="node-orbit node-1">
+            <i data-lucide="cpu"></i>
+            <span>AI Neural Nets</span>
+          </div>
+          <div class="node-orbit node-2">
+            <i data-lucide="code-2"></i>
+            <span>Rust & React</span>
+          </div>
+          <div class="node-orbit node-3">
+            <i data-lucide="shield-check"></i>
+            <span>Zero-Trust Security</span>
+          </div>
+          <div class="node-orbit node-4">
+            <i data-lucide="sparkles"></i>
+            <span>Glass UX</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ABOUT SECTION ==================== -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="sub-title">Who We Are</span>
+        <h2>The Chameleon Philosophy</h2>
+        <p>
+          Traditional tech agencies lock clients into rigid frameworks and endless management bloat. We founded <strong>Chameleon Works</strong> on a radical premise: <em>Hyper-adaptability driven by 10 world-class hands-on engineers and creators.</em>
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <div class="glass-card about-card">
+          <div class="card-icon">
+            <i data-lucide="compass"></i>
+          </div>
+          <h3>Our Origin Story</h3>
+          <p>
+            Born in 2024, our 10 founders met after building systems for Fortune 500 tech companies and high-growth AI startups. We realized clients don't want account managers—they want direct access to the experts actually building the software.
+          </p>
+        </div>
+
+        <div class="glass-card about-card">
+          <div class="card-icon">
+            <i data-lucide="layers"></i>
+          </div>
+          <h3>Shape-Shifting Tech Stack</h3>
+          <p>
+            Whether your product requires Rust for zero-latency backends, PyTorch for fine-tuning LLMs, Flutter for cross-platform apps, or WebGL for interactive 3D, our 10 team members fluently pivot without missing a beat.
+          </p>
+        </div>
+
+        <div class="glass-card about-card">
+          <div class="card-icon">
+            <i data-lucide="target"></i>
+          </div>
+          <h3>100% In-House Guarantee</h3>
+          <p>
+            Every line of code, UI component, and cloud deployment is crafted directly by our 10 team members. No outsourcing, no junior sub-contractors, no hidden handoffs.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== WHY CHOOSE US ==================== -->
+  <section id="why-us" class="why-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="sub-title">Why Choose Us</span>
+        <h2>Designed for Radical Advantage</h2>
+        <p>
+          Why do founders and enterprise leaders choose <strong>Chameleon Works</strong> over traditional digital agencies and expensive consultancy giants?
+        </p>
+
+        <div class="view-toggle-bar">
+          <button class="toggle-btn active" id="tabPillarsBtn">Core Value Pillars</button>
+          <button class="toggle-btn" id="tabMatrixBtn">Agency Comparison Matrix</button>
+        </div>
+      </div>
+
+      <!-- Pillars View -->
+      <div class="pillars-grid" id="pillarsView">
+        <div class="glass-card pillar-card">
+          <div class="pillar-header">
+            <div class="pillar-icon"><i data-lucide="zap"></i></div>
+            <span class="pillar-num">01</span>
+          </div>
+          <h3>Shape-Shifting Adaptability</h3>
+          <p>Technology moves fast; we move faster. We dynamically adapt tech stacks, team size, and architectures to match your exact evolving needs.</p>
+        </div>
+
+        <div class="glass-card pillar-card">
+          <div class="pillar-header">
+            <div class="pillar-icon"><i data-lucide="shield-check"></i></div>
+            <span class="pillar-num">02</span>
+          </div>
+          <h3>Elite 10-Member Senior Crew</h3>
+          <p>No junior bloat or outsourced layers. Every line of code, design asset, and cloud resource is engineered by our 10 senior battle-tested experts.</p>
+        </div>
+
+        <div class="glass-card pillar-card">
+          <div class="pillar-header">
+            <div class="pillar-icon"><i data-lucide="cpu"></i></div>
+            <span class="pillar-num">03</span>
+          </div>
+          <h3>Native AI Integration</h3>
+          <p>We don't just add basic AI wrappers. We build custom RAG pipelines, fine-tuned models, and intelligent workflows directly into your core product.</p>
+        </div>
+
+        <div class="glass-card pillar-card">
+          <div class="pillar-header">
+            <div class="pillar-icon"><i data-lucide="sparkles"></i></div>
+            <span class="pillar-num">04</span>
+          </div>
+          <h3>Uncompromising Design & UX</h3>
+          <p>Visually captivating interfaces with sub-100ms response times, silky micro-animations, and 100/100 Google Lighthouse performance metrics.</p>
+        </div>
+
+        <div class="glass-card pillar-card">
+          <div class="pillar-header">
+            <div class="pillar-icon"><i data-lucide="lock"></i></div>
+            <span class="pillar-num">05</span>
+          </div>
+          <h3>Military-Grade Security</h3>
+          <p>Zero Trust paradigms, OAuth2/OIDC, SOC2 readiness, and automated security scanning embedded directly into our CI/CD pipelines.</p>
+        </div>
+
+        <div class="glass-card pillar-card">
+          <div class="pillar-header">
+            <div class="pillar-icon"><i data-lucide="trending-up"></i></div>
+            <span class="pillar-num">06</span>
+          </div>
+          <h3>Measurable ROI & Velocity</h3>
+          <p>We ship functional production MVPs in 3-6 weeks, enabling rapid market feedback, user acquisition, and investor validation.</p>
+        </div>
+      </div>
+
+      <!-- Comparison Matrix View -->
+      <div class="matrix-wrapper glass-card hidden" id="matrixView">
+        <table class="matrix-table">
+          <thead>
+            <tr>
+              <th>Feature / Dimension</th>
+              <th class="highlight-col"><span class="matrix-brand">🦎 Chameleon Works</span></th>
+              <th>Traditional Agency</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="feature-name">Team Composition</td>
+              <td class="chameleon-val"><i data-lucide="check" class="check-icon"></i> 100% Senior Specialists (All 10 Team Members hands-on)</td>
+              <td class="trad-val"><i data-lucide="x" class="x-icon"></i> Heavy account managers & junior developers</td>
+            </tr>
+            <tr>
+              <td class="feature-name">Adaptability & Stacks</td>
+              <td class="chameleon-val"><i data-lucide="check" class="check-icon"></i> Fluid multi-stack (React, Rust, Python AI, Flutter, K8s)</td>
+              <td class="trad-val"><i data-lucide="x" class="x-icon"></i> Rigid legacy framework lock-in</td>
+            </tr>
+            <tr>
+              <td class="feature-name">Development Velocity</td>
+              <td class="chameleon-val"><i data-lucide="check" class="check-icon"></i> MVP in 3-6 weeks with continuous deployment</td>
+              <td class="trad-val"><i data-lucide="x" class="x-icon"></i> 3-6 months slow waterfall cycles</td>
+            </tr>
+            <tr>
+              <td class="feature-name">AI & ML Capabilities</td>
+              <td class="chameleon-val"><i data-lucide="check" class="check-icon"></i> In-house PhD AI lead with custom LLM/RAG pipelines</td>
+              <td class="trad-val"><i data-lucide="x" class="x-icon"></i> Basic third-party widget integrations</td>
+            </tr>
+            <tr>
+              <td class="feature-name">Design & UX Quality</td>
+              <td class="chameleon-val"><i data-lucide="check" class="check-icon"></i> Award-winning motion design & glassmorphism systems</td>
+              <td class="trad-val"><i data-lucide="x" class="x-icon"></i> Generic pre-bought templates</td>
+            </tr>
+            <tr>
+              <td class="feature-name">Communication</td>
+              <td class="chameleon-val"><i data-lucide="check" class="check-icon"></i> Direct Slack channel access to our core 10 developers</td>
+              <td class="trad-val"><i data-lucide="x" class="x-icon"></i> Filtered updates through middle management</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SERVICES SECTION ==================== -->
+  <section id="services" class="services-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="sub-title">Our Capabilities</span>
+        <h2>Multi-Disciplinary Execution</h2>
+        <p>From custom-built websites and brand identities to photo & video editing, data analysis, and hands-on coding help for students.</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="glass-card service-card">
+          <div class="service-icon"><i data-lucide="layout"></i></div>
+          <h3>Web Development</h3>
+          <p class="service-short">Custom websites and web apps built to look great and run fast on any device.</p>
+          <ul class="service-details-list">
+            <li><i data-lucide="check-circle-2" class="detail-check"></i> Responsive Websites & Landing Pages</li>
+            <li><i data-lucide="check-circle-2" class="detail-check"></i> Web Apps & Dashboards</li>
+            <li><i data-lucide="check-circle-2" class="detail-check"></i> Site Maintenance & Updates</li>
+          </ul>
+          <button class="btn btn-secondary btn-sm mt-auto open-contact-trigger">Discuss Service</button>
+        </div>
+
+        <div class="glass-card service-card">
+          <div class="service-icon"><i data-lucide="palette"></i></div>
+          <h3>Design & Branding</h3>
+          <p class="service-short">Logos, visual identities, and brand assets that make you instantly recognizable.</p>
+          <ul class="service-details-list">
+            <li><i data-lucide="check-circle-2" class="detail-check"></i> Logo & Brand Identity Design</li>
+            <li><i data-lucide="check-circle-2" class="detail-check"></i> Social Media & Marketing Graphics</li>
+            <li><i data-lucide="check-circle-2" class="detail-check"></i> Brand Style Guides</li>
+          </ul>
+          <button class="btn btn-secondary btn-sm mt-auto open-contact-trigger">Discuss Service</button>
+        </div>
+
+        <div class="glass-card service-card">
+          <div class="service-icon"><i data-lucide="image"></i></div>
+          <h3>Photo Editing</h3>
+          <p class="service-short">Retouching, color correction, and compositing that makes every photo shine.</p>
+          <ul class="service-details-list">
+            <li><i data-lucide="check-circle-2" class="detail-check"></i> Retouching & Color Grading</li>
+            <li><i data-lucide="check-circle-2" class="detail-check"></i> Background Removal & Compositing</li>
+            <li><i data-lucide="check-circle-2" class="detail-check"></i> Product & Portrait Editing</li>
+          </ul>
+          <button class="btn btn-secondary btn-sm mt-auto open-contact-trigger">Discuss Service</button>
+        </div>
+
+        <div class="glass-card service-card">
+          <div class="service-icon"><i data-lucide="film"></i></div>
+          <h3>Video Editing</h3>
+          <p class="service-short">Polished edits, transitions, and effects for social, promo, and personal projects.</p>
+          <ul class="service-details-list">
+            <li><i data-lucide="check-circle-2" class="detail-check"></i> Cutting, Transitions & Color Grading</li>
+            <li><i data-lucide="check-circle-2" class="detail-check"></i> Motion Graphics & Subtitles</li>
+            <li><i data-lucide="check-circle-2" class="detail-check"></i> Short-Form & Social Reels</li>
+          </ul>
+          <button class="btn btn-secondary btn-sm mt-auto open-contact-trigger">Discuss Service</button>
+        </div>
+
+        <div class="glass-card service-card">
+          <div class="service-icon"><i data-lucide="bar-chart-3"></i></div>
+          <h3>Data Analysis</h3>
+          <p class="service-short">Turning raw spreadsheets and datasets into clear insights and visuals.</p>
+          <ul class="service-details-list">
+            <li><i data-lucide="check-circle-2" class="detail-check"></i> Data Cleaning & Visualization</li>
+            <li><i data-lucide="check-circle-2" class="detail-check"></i> Excel, SQL & Python Analysis</li>
+            <li><i data-lucide="check-circle-2" class="detail-check"></i> Reports & Dashboards</li>
+          </ul>
+          <button class="btn btn-secondary btn-sm mt-auto open-contact-trigger">Discuss Service</button>
+        </div>
+
+        <div class="glass-card service-card">
+          <div class="service-icon"><i data-lucide="graduation-cap"></i></div>
+          <h3>Student Coding Help</h3>
+          <p class="service-short">Projects, algorithms, and debugging support to help students finish strong.</p>
+          <ul class="service-details-list">
+            <li><i data-lucide="check-circle-2" class="detail-check"></i> Class Projects & Assignments</li>
+            <li><i data-lucide="check-circle-2" class="detail-check"></i> Algorithm Design & Explanation</li>
+            <li><i data-lucide="check-circle-2" class="detail-check"></i> Debugging & Fixing Code Errors</li>
+          </ul>
+          <button class="btn btn-secondary btn-sm mt-auto open-contact-trigger">Discuss Service</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== TEAM SHOWCASE (THE 10 PEOPLE) ==================== -->
+  <section id="team" class="team-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="sub-title">The 10 Champions</span>
+        <h2>Meet Every Person Behind Chameleon Works</h2>
+        <p>We are a tight-knit squad of 10 seasoned builders. Click on any member to explore their background, key achievements, and technical mastery.</p>
+
+        <div class="filter-bar" id="teamFilterBar">
+          <button class="filter-btn active" data-cat="All">All (10)</button>
+          <button class="filter-btn" data-cat="Leadership">Leadership</button>
+          <button class="filter-btn" data-cat="Engineering">Engineering</button>
+          <button class="filter-btn" data-cat="AI & Data">AI & Data</button>
+          <button class="filter-btn" data-cat="Design & UX">Design & UX</button>
+          <button class="filter-btn" data-cat="Product & Strategy">Product & Strategy</button>
+        </div>
+      </div>
+
+      <!-- Dynamic Team Grid Container -->
+      <div class="team-grid" id="teamGrid">
+        <!-- Rendered via app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PROJECT ESTIMATOR ==================== -->
+  <section id="estimator" class="estimator-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="sub-title">Interactive Calculator</span>
+        <h2>Instant Project Estimator</h2>
+        <p>Configure your project parameters to get an instant estimated timeline and budget breakdown powered by our 10-person squad.</p>
+      </div>
+
+      <div class="estimator-box glass-card">
+        <div class="estimator-inputs">
+          <div class="estimator-group">
+            <label class="group-label">1. Select Project Scope & Technology</label>
+            <div class="options-grid">
+              <div class="option-card active" data-platform="web">
+                <div class="checkbox-indicator"><i data-lucide="check"></i></div>
+                <span>Full-Stack Web App</span>
+              </div>
+              <div class="option-card" data-platform="mobile">
+                <div class="checkbox-indicator"><i data-lucide="check"></i></div>
+                <span>Cross-Platform Mobile App</span>
+              </div>
+              <div class="option-card" data-platform="ai">
+                <div class="checkbox-indicator"><i data-lucide="check"></i></div>
+                <span>AI RAG & Neural System</span>
+              </div>
+              <div class="option-card" data-platform="cloud">
+                <div class="checkbox-indicator"><i data-lucide="check"></i></div>
+                <span>Cloud Infrastructure & Security</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="estimator-group">
+            <div class="group-label-between">
+              <label class="group-label">2. Dedicated Senior Squad Size</label>
+              <span class="squad-val-badge" id="squadBadge">4 Specialists (Out of 10)</span>
+            </div>
+            <input type="range" min="2" max="10" value="4" class="custom-range-slider" id="squadRange" />
+            <div class="slider-labels">
+              <span>2 (Lean Core)</span>
+              <span>5 (Standard Squad)</span>
+              <span>10 (Full Startup Force)</span>
+            </div>
+          </div>
+
+          <div class="estimator-group">
+            <label class="group-label">3. Desired Sprint Velocity</label>
+            <div class="speed-pills" id="speedPills">
+              <button class="speed-pill" data-speed="rush">Sprint Rush (Accelerated)</button>
+              <button class="speed-pill active" data-speed="balanced">Balanced Agile Sprint</button>
+              <button class="speed-pill" data-speed="enterprise">Enterprise Scale</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="estimator-summary">
+          <h3>Estimate Breakdown</h3>
+          <p class="summary-desc">Estimated specs for your custom Chameleon Works engagement.</p>
+
+          <div class="metric-box">
+            <div class="metric-icon"><i data-lucide="clock"></i></div>
+            <div>
+              <div class="metric-title">Estimated Delivery</div>
+              <div class="metric-val gradient-text" id="estDelivery">4 - 6 Weeks</div>
+            </div>
+          </div>
+
+          <div class="metric-box">
+            <div class="metric-icon"><i data-lucide="users"></i></div>
+            <div>
+              <div class="metric-title">In-House Squad</div>
+              <div class="metric-val" id="estSquad">4 Senior Specialists</div>
+            </div>
+          </div>
+
+          <div class="metric-box">
+            <div class="metric-icon"><i data-lucide="dollar-sign"></i></div>
+            <div>
+              <div class="metric-title">Budget Range</div>
+              <div class="metric-val gradient-text" id="estBudget">$12,960 - $15,840 USD</div>
+            </div>
+          </div>
+
+          <button class="btn btn-primary w-full mt-6" id="lockEstimateBtn">
+            <span>Lock In Estimate</span>
+            <i data-lucide="arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PORTFOLIO SECTION ==================== -->
+  <section id="portfolio" class="portfolio-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="sub-title">Case Studies</span>
+        <h2>Selected Work & Impact</h2>
+        <p>A glimpse into the high-concurrency systems, AI neural platforms, and spatial design projects delivered by our 10 team members.</p>
+      </div>
+
+      <div class="portfolio-grid">
+        <div class="glass-card portfolio-card">
+          <div class="portfolio-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80" alt="AuraHealth" class="portfolio-img" />
+            <div class="portfolio-stats-badge">99.4% Accuracy | 450k Active Users</div>
+          </div>
+          <div class="portfolio-content">
+            <span class="portfolio-cat">AI & HealthTech</span>
+            <h3>AuraHealth — AI Diagnostic Companion</h3>
+            <p>An adaptive AI medical triaging assistant connecting patients with intelligent preliminary diagnostic insights and real-time specialist matching.</p>
+            <div class="tags-row">
+              <span class="tag-pill">React</span>
+              <span class="tag-pill">Python</span>
+              <span class="tag-pill">RAG Engine</span>
+              <span class="tag-pill">AWS</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass-card portfolio-card">
+          <div class="portfolio-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=800&q=80" alt="ChromaPay" class="portfolio-img" />
+            <div class="portfolio-stats-badge">50k Tx/Sec | 0ms Security Breaches</div>
+          </div>
+          <div class="portfolio-content">
+            <span class="portfolio-cat">Fintech & Cloud</span>
+            <h3>ChromaPay — Next-Gen Web3 Fintech</h3>
+            <p>Ultra-fast cross-border payment gateway with biometric encryption, instant liquidity settlement, and cross-platform mobile apps.</p>
+            <div class="tags-row">
+              <span class="tag-pill">Rust</span>
+              <span class="tag-pill">Flutter</span>
+              <span class="tag-pill">Kubernetes</span>
+              <span class="tag-pill">GraphQL</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass-card portfolio-card">
+          <div class="portfolio-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80" alt="Vortex 3D" class="portfolio-img" />
+            <div class="portfolio-stats-badge">60 FPS Render | 3x Engagement</div>
+          </div>
+          <div class="portfolio-content">
+            <span class="portfolio-cat">Design & Web3D</span>
+            <h3>Vortex 3D — Real-Time Spatial Workspace</h3>
+            <p>Interactive browser-based 3D collaborative environment for digital architects, featuring real-time light rendering and spatial audio.</p>
+            <div class="tags-row">
+              <span class="tag-pill">WebGL</span>
+              <span class="tag-pill">Three.js</span>
+              <span class="tag-pill">React</span>
+              <span class="tag-pill">Design System</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== TESTIMONIALS & FAQ ==================== -->
+  <section class="testimonials-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="sub-title">Client Praise</span>
+        <h2>Trusted by Visionary Founders</h2>
+        <p>Read what tech partners say about their experience working with our 10 senior specialists.</p>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="glass-card testimonial-card">
+          <i data-lucide="quote" class="quote-icon"></i>
+          <p class="quote-text">"Chameleon Works took our raw concept and turned it into a market-ready AI platform in just 4 weeks. Their team of 10 operates with the power of a 100-person agency."</p>
+          <div class="author-row">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80" alt="Samantha Vance" class="author-avatar" />
+            <div>
+              <div class="author-name">Samantha Vance</div>
+              <div class="author-role">Venture Partner at Horizon Capital</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass-card testimonial-card">
+          <i data-lucide="quote" class="quote-icon"></i>
+          <p class="quote-text">"The level of design beauty combined with rock-solid Rust/Cloud backends blew our investors away. You get direct access to their founders and leads—no fluff."</p>
+          <div class="author-row">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80" alt="Dr. Aris Thorne" class="author-avatar" />
+            <div>
+              <div class="author-name">Dr. Aris Thorne</div>
+              <div class="author-role">CEO at BioMatrix Labs</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass-card testimonial-card">
+          <i data-lucide="quote" class="quote-icon"></i>
+          <p class="quote-text">"They adapt to changing requirements like magic. When we pivot strategy mid-sprint, Chameleon Works seamlessly aligns without losing a single day."</p>
+          <div class="author-row">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=200&q=80" alt="Elena Rostova" class="author-avatar" />
+            <div>
+              <div class="author-name">Elena Rostova</div>
+              <div class="author-role">VP of Product at ScaleFlow</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="faq-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="sub-title">Got Questions?</span>
+        <h2>Frequently Asked Questions</h2>
+        <p>Everything you need to know about engaging Chameleon Works.</p>
+      </div>
+
+      <div class="faq-accordion" id="faqAccordion">
+        <!-- Rendered in app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT SECTION ==================== -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="sub-title">Get In Touch</span>
+        <h2>Let's Shape-Shift Your Product</h2>
+        <p>Schedule a 30-minute technical discovery session directly with our founders & core leads.</p>
+      </div>
+
+      <div class="contact-box glass-card">
+        <form class="contact-form" id="contactForm">
+          <div class="prefill-pill hidden" id="prefillMemberPill">
+            <span>Direct Request for: <strong id="prefillMemberName"></strong></span>
+          </div>
+
+          <div class="prefill-pill estimate-pill hidden" id="prefillEstimatePill">
+            <span>Estimator Attached: <strong id="prefillEstimateText"></strong></span>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label>Your Name *</label>
+              <div class="input-with-icon">
+                <i data-lucide="user"></i>
+                <input type="text" required placeholder="e.g. Alex Morgan" id="inputName" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Work Email *</label>
+              <div class="input-with-icon">
+                <i data-lucide="mail"></i>
+                <input type="email" required placeholder="alex@company.com" id="inputEmail" />
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Company / Startup Name</label>
+            <div class="input-with-icon">
+              <i data-lucide="building"></i>
+              <input type="text" placeholder="e.g. NexaTech Labs" id="inputCompany" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Project Goals & Requirements *</label>
+            <textarea required rows="4" placeholder="Tell us about your project vision, target timeline, or tech challenges..." id="inputDetails"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary w-full mt-2">
+            <span>Send Direct Message to Team</span>
+            <i data-lucide="send"></i>
+          </button>
+        </form>
+
+        <div class="success-toast hidden" id="successToast">
+          <i data-lucide="check-circle-2" class="success-icon"></i>
+          <h3>Message Received!</h3>
+          <p>Thank you! CEO CELIA AHMED or CTO OMAR MOHAMED will reach out within 2 business hours to schedule your free 30-minute discovery call.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer-section">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col brand-col">
+          <div class="brand-logo mb-4">
+            <img src="logo.jpeg" alt="Chameleon Works logo" class="brand-logo-img brand-logo-img-footer" />
+          </div>
+          <p class="footer-tagline">
+            An elite 10-person multi-disciplinary software startup engineering high-velocity web platforms, custom AI neural systems, and enterprise cloud infrastructure.
+          </p>
+          <div class="system-status-pill">
+            <span class="status-dot"></span>
+            <span>All 10 Specialists Active & Deploying</span>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#about">About & Philosophy</a></li>
+            <li><a href="#why-us">Why Choose Us</a></li>
+            <li><a href="#services">Our Capabilities</a></li>
+            <li><a href="#team">The 10 Champions</a></li>
+            <li><a href="#estimator">Project Estimator</a></li>
+            <li><a href="#portfolio">Selected Work</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Our 10 Specialists</h4>
+          <div class="team-pill-cloud" id="footerTeamPills">
+            <!-- Rendered in app.js -->
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Chameleon Works. Built for maximum adaptability.</p>
+        <div class="footer-socials">
+          <a href="#" aria-label="GitHub"><i data-lucide="github"></i></a>
+          <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+          <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+          <button class="scroll-top-btn" id="scrollTopBtn" title="Back to top">
+            <i data-lucide="arrow-up"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== TEAM MEMBER MODAL ==================== -->
+  <div class="modal-overlay hidden" id="teamModal">
+    <div class="modal-content team-modal">
+      <button class="modal-close-btn" id="closeTeamModal"><i data-lucide="x"></i></button>
+
+      <div class="member-modal-header">
+        <div class="avatar-large" id="modalAvatar">EV</div>
+        <div class="member-modal-title">
+          <div class="role-tag" id="modalRole">Co-Founder & CEO</div>
+          <h2 id="modalName">Elena Vance</h2>
+          <p class="exp-text">
+            <i data-lucide="briefcase"></i> <span id="modalExp">12+ Years Experience</span> • <span id="modalCat">Leadership</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="member-modal-body">
+        <div class="superpower-callout">
+          <div class="superpower-icon"><i data-lucide="zap"></i></div>
+          <div>
+            <div class="superpower-label">Chameleon Signature Superpower</div>
+            <div class="superpower-val" id="modalSuperpower">Chroma Vision — Spotting hidden opportunities in chaotic markets</div>
+          </div>
+        </div>
+
+        <div class="modal-section">
+          <h4>About Member</h4>
+          <p class="bio-text" id="modalBio"></p>
+        </div>
+
+        <div class="modal-section">
+          <h4>Technical & Leadership Mastery</h4>
+          <div class="skills-grid" id="modalSkills">
+            <!-- Dynamically populated -->
+          </div>
+        </div>
+
+        <div class="modal-section">
+          <h4>Key Track Record & Impact</h4>
+          <ul class="achievements-list" id="modalAchievements">
+            <!-- Dynamically populated -->
+          </ul>
+        </div>
+      </div>
+
+      <div class="member-modal-footer">
+        <button class="btn btn-primary w-full" id="modalContactBtn">
+          <i data-lucide="message-square"></i>
+          <span id="modalContactText">Work Directly with Celia</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  
+  <!-- Supabase JS Library -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  
+  <script>
+    // 1. Initialize Supabase Client with a unique variable name
+    const SUPABASE_URL = 'https://maaodgyatxshrsgwnvnp.supabase.co';
+    const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1hYW9kZ3lhdHhzaHJzZ3dudm5wIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODU1MDU2ODgsImV4cCI6MjEwMTA4MTY4OH0.umLuNYJ5GlBfFgginriyQ74mNQZQFBIWSqT0rgbAKio';
+    
+    const supabaseClient = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+
+    // 2. Attach Form Submission Listener
+    document.addEventListener('DOMContentLoaded', () => {
+      const contactForm = document.getElementById('contactForm');
+      const successToast = document.getElementById('successToast');
+
+      if (contactForm) {
+        contactForm.addEventListener('submit', async (e) => {
+          e.preventDefault(); // Stop default browser refresh
+
+          // Get values from form inputs
+          const name = document.getElementById('inputName').value;
+          const email = document.getElementById('inputEmail').value;
+          const company = document.getElementById('inputCompany').value;
+          const details = document.getElementById('inputDetails').value;
+
+          // 3. Insert into your Supabase table
+          // CHANGE 'contacts' to your actual Supabase table name!
+          const { data, error } = await supabaseClient
+            .from('contact_requests') 
+            .insert([
+              { 
+                name: name, 
+                email: email, 
+                company: company, 
+                details: details 
+              }
+            ]);
+
+          if (error) {
+            console.error('Error inserting data into Supabase:', error.message);
+            alert('Error submitting form: ' + error.message);
+          } else {
+            console.log('Submission successful:', data);
+            
+            // Show success UI
+            contactForm.reset();
+            contactForm.classList.add('hidden');
+            if (successToast) successToast.classList.remove('hidden');
+          }
+        });
+      }
+    });
+    // Listener for "Lock In Estimate" Button
+    document.addEventListener('DOMContentLoaded', () => {
+      const lockEstimateBtn = document.getElementById('lockEstimateBtn');
+      if (!lockEstimateBtn) return;
+
+      lockEstimateBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+
+        const activePlatformEl = document.querySelector('.estimator-group .option-card.active span');
+        const selectedScope = activePlatformEl ? activePlatformEl.innerText : 'Not specified';
+        const squadSize = document.getElementById('squadRange')?.value;
+        const activeSpeedEl = document.querySelector('.speed-pill.active');
+        const selectedVelocity = activeSpeedEl ? activeSpeedEl.innerText : 'Not specified';
+        const budget = document.getElementById('estBudget')?.innerText;
+
+        // Format estimate string
+        const estimateSummary = `${selectedScope} | Squad: ${squadSize} | Velocity: ${selectedVelocity} | Est: ${budget}`;
+
+        // Pre-fill into contact form textarea
+        const detailsInput = document.getElementById('inputDetails');
+        if (detailsInput) {
+          detailsInput.value = `[Selected Estimate: ${estimateSummary}]\n\n` + detailsInput.value;
+        }
+
+        // Scroll user down to the contact form
+        document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+    document.addEventListener('DOMContentLoaded', () => {
+  const contactForm = document.getElementById('contactForm');
+  const successToast = document.getElementById('successToast');
+
+  if (contactForm) {
+    contactForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      // Get values from inputs
+      const name = document.getElementById('inputName').value;
+      const email = document.getElementById('inputEmail').value;
+      const company = document.getElementById('inputCompany').value;
+      const details = document.getElementById('inputDetails').value;
+
+      // 1. Check if a team member was pre-selected (reads from your prefill badge)
+      const prefillBadge = document.getElementById('prefillMemberPill');
+      const memberNameEl = document.getElementById('prefillMemberName');
+      
+      // If the badge is visible and contains a name, save it; otherwise set to null
+      const requestedMember = (prefillBadge && !prefillBadge.classList.contains('hidden')) 
+        ? memberNameEl.innerText 
+        : null;
+
+      // 2. Insert into Supabase
+      const { data, error } = await supabaseClient
+        .from('contact_requests')
+        .insert([
+          { 
+            name: name, 
+            email: email, 
+            company: company, 
+            details: details,
+            requested_member: requestedMember // <-- Added team member field
+          }
+        ]);
+
+      if (error) {
+        console.error('Error inserting data:', error.message);
+        alert('Error submitting form: ' + error.message);
+      } else {
+        contactForm.reset();
+        contactForm.classList.add('hidden');
+        if (successToast) successToast.classList.remove('hidden');
+      }
+    });
+  }
+});
+  </script>
+</body>
+</html>
