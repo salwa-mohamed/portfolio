@@ -8,9 +8,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦎</text></svg>" />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/lucide@latest" defer></script>
-    <link rel="stylesheet" href="chamelion.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body id="home">
     <header>
@@ -36,6 +38,8 @@
                           <li class="nav-item"><a class="nav-link fs-5" href="#team">Team</a></li>
                           <li class="nav-item"><a class="nav-link fs-5" href="#our-works">Our Works</a></li>
                           <li class="nav-item"><a class="nav-link fs-5" href="#services">Services</a></li>
+                          <li class="nav-item"><a class="nav-link fs-5" href="#faq">FAQ</a></li>
+                          <li class="nav-item"><a class="nav-link fs-5" href="#customer-reviews">Customer Reviews</a></li>
                           <li class="nav-item"><a class="nav-link fs-5" href="#contact-us">Contact Us</a></li>
                       </ul>
 
@@ -44,6 +48,10 @@
                           <button class="btn btn-sm btn-outline-primary" id="themeToggle">
                           <i class="fa-solid fa-moon"></i>
                           <span id="themeText" class="d-none d-lg-inline">Dark Mode</span>
+                          </button>
+                          <button class="btn btn-sm btn-outline-primary" id="langToggle">
+                            <i class="fa-solid fa-language"></i>
+                            <span id="langText" class="d-none d-lg-inline">العربية</span>
                           </button>
                           <a href="#contact-us" class="btn btn-sm text-white" style="background: var(--gradient-primary);">
                           Request Your Service Now
@@ -195,7 +203,7 @@
           <p>We are a tight-knit squad of 10 seasoned builders. Click on any member to explore their background, key achievements, and technical mastery.</p>
 
           <div class="filter-bar" id="teamFilterBar">
-            <button class="filter-btn active" data-cat="All">All (10)</button>
+            <button class="filter-btn active" data-cat="All">All (9)</button>
             <button class="filter-btn" data-cat="Leadership">Leadership</button>
             <button class="filter-btn" data-cat="Engineering">Engineering</button>
             <button class="filter-btn" data-cat="AI & Data">AI & Data</button>
@@ -409,6 +417,132 @@
       </div>
     </section>
 
+    <!-- FAQ -->
+    <section id="faq" class="faq-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="sub-title">GOT QUESTIONS?</span>
+          <h2>Frequently Asked Questions</h2>
+          <p>Everything you need to know about engaging Chameleon Works.</p>
+        </div>
+
+        <div class="faq-accordion">
+          
+          <details class="faq-item glass-card" open>
+            <summary class="faq-question">
+              <span data-key="faq_q1">Why are you called Chameleon Works?</span>
+              <i data-lucide="chevron-down" class="icon"></i>
+            </summary>
+            <div class="faq-answer">
+              <p>Like a chameleon adapting to any terrain, our startup adapts instantly to your industry, tech stack, and strategic goals. We don't push one rigid technology—we shape-shift our expertise to build what's best for your product.</p>
+            </div>
+          </details>
+
+          <details class="faq-item glass-card">
+            <summary class="faq-question">
+              <span data-key="faq_q1">How does working with an elite 9-person team benefit me?</span>
+              <i data-lucide="chevron-down" class="icon"></i>
+            </summary>
+            <div class="faq-answer">
+              <p>No junior developers, no account managers, no delays. You work directly with 10 senior specialists. That means faster decisions, cleaner code, and MVP in 3-6 weeks instead of 6 months.</p>
+            </div>
+          </details>
+
+          <details class="faq-item glass-card">
+            <summary class="faq-question">
+              <span data-key="faq_q1">What is your typical project timeline?</span>
+              <i data-lucide="chevron-down" class="icon"></i>
+            </summary>
+            <div class="faq-answer">
+              <p>Discovery: 3 days. Design: 1 week. Development: 2-4 weeks. Launch: Week 6. We ship continuously so you see progress every few days.</p>
+            </div>
+          </details>
+
+          <details class="faq-item glass-card">
+            <summary class="faq-question">
+              <span data-key="faq_q1">Do you work with startups and enterprises?</span>
+              <i data-lucide="chevron-down" class="icon"></i>
+            </summary>
+            <div class="faq-answer">
+              <p>Yes. We’ve built MVPs for YC startups and re-architected systems for Fortune 500 companies. Our process scales up or down based on your needs.</p>
+            </div>
+          </details>
+
+        </div>
+      </div>
+    </section>
+
+<!-- Customer Reviews -->
+    <section id="customer-reviews" class="reviews-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="sub-title">Customer Reviews</span>
+          <h2>What Our Clients Say</h2>
+          <p>Real feedback from founders and leaders who trusted Chameleon Works.</p>
+        </div>
+
+        <div class="reviews-grid">
+          
+          <div class="review-card glass-card">
+            <div class="stars">
+              <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+            </div>
+            <p class="review-text">"Chameleon Works delivered our MVP in 4 weeks. The quality is insane and their 10-person team felt like an extension of our own. Best decision we made."</p>
+            <div class="review-author">
+              <img src="https://i.pravatar.cc/150?img=1" alt="Sarah Johnson" class="review-avatar">
+              <div>
+                <div class="review-name">Sarah Johnson</div>
+                <div class="review-role">CEO, TechNova</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card glass-card">
+            <div class="stars">
+              <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+            </div>
+            <p class="review-text">"No fluff, no junior devs. Direct access to senior architects. They re-architected our backend with Rust and cut our costs by 60%."</p>
+            <div class="review-author">
+              <img src="https://i.pravatar.cc/150?img=2" alt="Ahmed Khaled" class="review-avatar">
+              <div>
+                <div class="review-name">Ahmed Khaled</div>
+                <div class="review-role">CTO, FinEdge</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card glass-card">
+            <div class="stars">
+              <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+            </div>
+            <p class="review-text">"They don't just code. They think like founders. The AI integration they built for us increased user retention by 3x in 2 months."</p>
+            <div class="review-author">
+              <img src="https://i.pravatar.cc/150?img=3" alt="Emily Chen" class="review-avatar">
+              <div>
+                <div class="review-name">Emily Chen</div>
+                <div class="review-role">Product Lead, HealthAI</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card glass-card">
+            <div class="stars">
+              <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
+            </div>
+            <p class="review-text">"Compared to big agencies, Chameleon Works is 10x faster and 5x cheaper. And the communication? Direct Slack with the founders."</p>
+            <div class="review-author">
+              <img src="https://i.pravatar.cc/150?img=4" alt="Omar Farouk" class="review-avatar">
+              <div>
+                <div class="review-name">Omar Farouk</div>
+                <div class="review-role">Founder, LogiFlow</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
     <!-- cotact us -->
     <section id="contact-us" class="contact-section">
     <div class="container">
@@ -532,6 +666,6 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="chamelion.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>

@@ -11,6 +11,17 @@ html{
   --gradient-primary: linear-gradient(90deg, #1DCFCF, #297BF0, #8E44AD);
 }
 
+body[dir="rtl"] {
+  text-align: right;
+}
+body[dir="rtl"].navbar-nav {
+  margin-right: auto!important;
+  margin-left: 0!important;
+}
+body[dir="rtl"].d-flex {
+  flex-direction: row-reverse;
+}
+
 body{
   padding-top: 90px;
   transition: background 0.3s, color 0.3s; /* <--- للدارك مود */
@@ -253,7 +264,6 @@ body.dark-mode .contact-section {
   color: white;
 }
 
-/* <--- صلحت هنا: خصصت الاستايل للـ team بس */
 .team-section .section-header {
   text-align: center;
   margin-bottom: 60px;
@@ -559,6 +569,207 @@ body.dark-mode .service-card .btn-secondary:hover {
   color: white;
 }
 
+/* ===== FAQ SECTION ===== */
+.faq-section {
+  padding: 100px 0;
+  background: linear-gradient(180deg, #0F1C3A 0%, #192A4E 100%);
+  position: relative;
+}
+
+.faq-section.sub-title {
+  color: var(--blue);
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.faq-section h2 {
+  color: #fff;
+  font-size: 2.8rem;
+  font-weight: 800;
+}
+
+.faq-section p {
+  color: #a0aec0;
+}
+
+.faq-accordion {
+  max-width: 850px;
+  margin: 60px auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.faq-item {
+  border-radius: 16px;
+  background: rgba(30, 41, 59, 0.6);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.faq-item:hover {
+  border: 1px solid var(--blue);
+}
+
+.faq-question {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 30px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  list-style: none;
+  text-align: left;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #fff;
+  font-family: 'Outfit', sans-serif;
+}
+
+.faq-question::-webkit-details-marker {
+  display: none;
+}
+
+.faq-question.icon {
+  width: 22px;
+  height: 22px;
+  color: var(--teal);
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+}
+
+.faq-item[open].faq-question.icon {
+  transform: rotate(180deg);
+  color: var(--blue);
+}
+
+.faq-answer {
+  padding: 0 30px 25px 30px;
+  animation: fadeIn 0.4s ease;
+}
+
+.faq-answer p {
+  color: #CBD5E1;
+  line-height: 1.8;
+  font-size: 1rem;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding-top: 20px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* RTL */
+body[dir="rtl"].faq-question {
+  text-align: right;
+  flex-direction: row-reverse;
+  font-family: 'Cairo', sans-serif;
+}
+
+/* ===== REVIEWS SECTION ===== */
+.reviews-section {
+  padding: 100px 0;
+  background: #0F1C3A;
+  position: relative;
+  overflow: hidden;
+}
+
+.reviews-section h2 , .reviews-section p{
+  color: white;
+}
+
+.reviews-section::before {
+  content: '';
+  position: absolute;
+  top: -10%;
+  right: -10%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(142,68,173,0.15) 0%, transparent 70%);
+  filter: blur(100px);
+  z-index: 0;
+}
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  margin-top: 60px;
+  position: relative;
+  z-index: 1;
+}
+
+.review-card {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+}
+
+.review-card:hover {
+  transform: translateY(-8px);
+  border: 1px solid var(--coral);
+}
+
+.stars {
+  display: flex;
+  gap: 5px;
+  color: var(--coral);
+}
+
+.stars svg {
+  width: 18px;
+  height: 18px;
+  fill: var(--coral);
+  stroke: var(--coral);
+}
+
+.review-text {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #E2E8F0;
+  font-style: italic;
+  flex-grow: 1;
+}
+
+.review-author {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255,255,255,0.15);
+}
+
+.review-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--teal);
+}
+
+.review-name {
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: #fff;
+}
+
+.review-role {
+  font-size: 0.9rem;
+  color: var(--blue);
+}
 /* ===== CONTACT SECTION ===== */
 .contact-section {
   padding: 120px 0;
