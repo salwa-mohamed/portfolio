@@ -1,671 +1,505 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chameleon Works</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦎</text></svg>" />
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CubMart</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body id="home">
-    <header>
-      <!-- nav -->
-      <nav class="navbar navbar-expand-lg border-bottom" style="border-color: #297BF0 !important;">
-              <div class="container-fluid px-4">
-                  
-                  <!-- Logo -->
-                  <a class="navbar-brand d-flex align-items-center gap-2 fw-bold" href="#home">
-                      <img src="images/WhatsApp_Image_2026-08-01_at_3.43.49_PM-removebg-preview.png" alt="logo" width="50">
-                      <span class="logo-title">Chameleon Works</span>
-                  </a>
 
-                  <!-- زرار الموبايل -->
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                      <span class="navbar-toggler-icon"></span>
-                  </button>
-
-                  <!-- اللينكات + الازرار -->
-                  <div class="collapse navbar-collapse" id="navbarNav">
-                      <ul class="navbar-nav mx-auto fw-semibold">
-                          <li class="nav-item"><a class="nav-link fs-5" href="#why-us">Why Us</a></li>
-                          <li class="nav-item"><a class="nav-link fs-5" href="#team">Team</a></li>
-                          <li class="nav-item"><a class="nav-link fs-5" href="#our-works">Our Works</a></li>
-                          <li class="nav-item"><a class="nav-link fs-5" href="#services">Services</a></li>
-                          <li class="nav-item"><a class="nav-link fs-5" href="#faq">FAQ</a></li>
-                          <li class="nav-item"><a class="nav-link fs-5" href="#customer-reviews">Customer Reviews</a></li>
-                          <li class="nav-item"><a class="nav-link fs-5" href="#contact-us">Contact Us</a></li>
-                      </ul>
-
-                      <!-- الازرار يمين -->
-                      <div class="d-flex align-items-center gap-3">
-                          <button class="btn btn-sm btn-outline-primary" id="themeToggle">
-                          <i class="fa-solid fa-moon"></i>
-                          <span id="themeText" class="d-none d-lg-inline">Dark Mode</span>
-                          </button>
-                          <button class="btn btn-sm btn-outline-primary" id="langToggle">
-                            <i class="fa-solid fa-language"></i>
-                            <span id="langText" class="d-none d-lg-inline">العربية</span>
-                          </button>
-                          <a href="#contact-us" class="btn btn-sm text-white" style="background: var(--gradient-primary);">
-                          Request Your Service Now
-                          </a>
-                      </div>
-                  </div>
-              </div>
-      </nav>
-      <!-- hero -->
-      <section class="hero m-5 p-5">
-          <div class="row align-items-center">
-              <div class="col-lg-8 hero-text">
-                  <h2 class="mb-4">From Vision <br><span>To Value</span></h2>
-                  <p class="fs-4">Welcome to Chameleon Works — an elite 10-person startup of senior system architects, AI leads, motion designers, and product strategists. We shape-shift our expertise to engineer high-velocity digital products.</p>
-              </div>
-              <div class="col-lg-4 text-center hero-img">
-                  <img class="img-fluid" src="images/WhatsApp_Image_2026-08-01_at_3.43.49_PM-removebg-preview.png" alt="logo" style="max-width: 280px;">
-              </div>
-          </div>
-      </section>
-    </header>
-
-    <!-- why us -->
-    <section id="why-us" class="why-section">
-    <div class="container">
-      <div class="section-header">
-        <span class="sub-title">Why Choose Us</span>
-        <h2>Designed for Radical Advantage</h2>
-        <p>
-          Why do founders and enterprise leaders choose <strong>Chameleon Works</strong> over traditional digital agencies and expensive consultancy giants?
-        </p>
-
-        <div class="view-toggle-bar">
-          <button class="toggle-btn active" id="tabPillarsBtn">Core Value Pillars</button>
-          <button class="toggle-btn" id="tabMatrixBtn">Agency Comparison Matrix</button>
-        </div>
-      </div>
-
-      <!-- Pillars View -->
-      <div class="pillars-grid" id="pillarsView">
-        <div class="glass-card pillar-card">
-          <div class="pillar-header">
-            <div class="pillar-icon"><i data-lucide="zap"></i></div>
-            <span class="pillar-num">01</span>
-          </div>
-          <h3>Shape-Shifting Adaptability</h3>
-          <p>Technology moves fast; we move faster. We dynamically adapt tech stacks, team size, and architectures to match your exact evolving needs.</p>
-        </div>
-
-        <div class="glass-card pillar-card">
-          <div class="pillar-header">
-            <div class="pillar-icon"><i data-lucide="shield-check"></i></div>
-            <span class="pillar-num">02</span>
-          </div>
-          <h3>Elite 10-Member Senior Crew</h3>
-          <p>No junior bloat or outsourced layers. Every line of code, design asset, and cloud resource is engineered by our 10 senior battle-tested experts.</p>
-        </div>
-
-        <div class="glass-card pillar-card">
-          <div class="pillar-header">
-            <div class="pillar-icon"><i data-lucide="cpu"></i></div>
-            <span class="pillar-num">03</span>
-          </div>
-          <h3>Native AI Integration</h3>
-          <p>We don't just add basic AI wrappers. We build custom RAG pipelines, fine-tuned models, and intelligent workflows directly into your core product.</p>
-        </div>
-
-        <div class="glass-card pillar-card">
-          <div class="pillar-header">
-            <div class="pillar-icon"><i data-lucide="sparkles"></i></div>
-            <span class="pillar-num">04</span>
-          </div>
-          <h3>Uncompromising Design & UX</h3>
-          <p>Visually captivating interfaces with sub-100ms response times, silky micro-animations, and 100/100 Google Lighthouse performance metrics.</p>
-        </div>
-
-        <div class="glass-card pillar-card">
-          <div class="pillar-header">
-            <div class="pillar-icon"><i data-lucide="lock"></i></div>
-            <span class="pillar-num">05</span>
-          </div>
-          <h3>Military-Grade Security</h3>
-          <p>Zero Trust paradigms, OAuth2/OIDC, SOC2 readiness, and automated security scanning embedded directly into our CI/CD pipelines.</p>
-        </div>
-
-        <div class="glass-card pillar-card">
-          <div class="pillar-header">
-            <div class="pillar-icon"><i data-lucide="trending-up"></i></div>
-            <span class="pillar-num">06</span>
-          </div>
-          <h3>Measurable ROI & Velocity</h3>
-          <p>We ship functional production MVPs in 3-6 weeks, enabling rapid market feedback, user acquisition, and investor validation.</p>
-        </div>
-      </div>
-
-      <!-- Comparison Matrix View -->
-      <div class="matrix-wrapper glass-card hidden" id="matrixView">
-        <table class="matrix-table">
-          <thead>
-            <tr>
-              <th>Feature / Dimension</th>
-              <th class="highlight-col"><span class="matrix-brand">🦎 Chameleon Works</span></th>
-              <th>Traditional Agency</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="feature-name">Team Composition</td>
-              <td class="chameleon-val"><i data-lucide="check" class="check-icon"></i> 100% Senior Specialists (All 10 Team Members hands-on)</td>
-              <td class="trad-val"><i data-lucide="x" class="x-icon"></i> Heavy account managers & junior developers</td>
-            </tr>
-            <tr>
-              <td class="feature-name">Adaptability & Stacks</td>
-              <td class="chameleon-val"><i data-lucide="check" class="check-icon"></i> Fluid multi-stack (React, Rust, Python AI, Flutter, K8s)</td>
-              <td class="trad-val"><i data-lucide="x" class="x-icon"></i> Rigid legacy framework lock-in</td>
-            </tr>
-            <tr>
-              <td class="feature-name">Development Velocity</td>
-              <td class="chameleon-val"><i data-lucide="check" class="check-icon"></i> MVP in 3-6 weeks with continuous deployment</td>
-              <td class="trad-val"><i data-lucide="x" class="x-icon"></i> 3-6 months slow waterfall cycles</td>
-            </tr>
-            <tr>
-              <td class="feature-name">AI & ML Capabilities</td>
-              <td class="chameleon-val"><i data-lucide="check" class="check-icon"></i> In-house PhD AI lead with custom LLM/RAG pipelines</td>
-              <td class="trad-val"><i data-lucide="x" class="x-icon"></i> Basic third-party widget integrations</td>
-            </tr>
-            <tr>
-              <td class="feature-name">Design & UX Quality</td>
-              <td class="chameleon-val"><i data-lucide="check" class="check-icon"></i> Award-winning motion design & glassmorphism systems</td>
-              <td class="trad-val"><i data-lucide="x" class="x-icon"></i> Generic pre-bought templates</td>
-            </tr>
-            <tr>
-              <td class="feature-name">Communication</td>
-              <td class="chameleon-val"><i data-lucide="check" class="check-icon"></i> Direct Slack channel access to our core 10 developers</td>
-              <td class="trad-val"><i data-lucide="x" class="x-icon"></i> Filtered updates through middle management</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-    </section>
-
-    <!-- team -->
-    <section id="team" class="team-section">
-      <div class="container">
-        <div class="section-header">
-          <span class="sub-title">The 9 Champions</span>
-          <h2>Meet Every Person Behind Chameleon Works</h2>
-          <p>We are a tight-knit squad of 10 seasoned builders. Click on any member to explore their background, key achievements, and technical mastery.</p>
-
-          <div class="filter-bar" id="teamFilterBar">
-            <button class="filter-btn active" data-cat="All">All (9)</button>
-            <button class="filter-btn" data-cat="Leadership">Leadership</button>
-            <button class="filter-btn" data-cat="Engineering">Engineering</button>
-            <button class="filter-btn" data-cat="AI & Data">AI & Data</button>
-            <button class="filter-btn" data-cat="Design & UX">Design & UX</button>
-            <button class="filter-btn" data-cat="Product & Strategy">Product & Strategy</button>
-          </div>
-        </div>
-
-        <!-- Dynamic Team Grid Container -->
-        <div class="team-card" data-category="Leadership"> <!-- <--- ضفت data-category -->
-            <div class="team-card-header">
-              <img src="images/celia.jpeg" alt="Celia Ahmed" class="team-avatar">
-            </div>
-            <p class="team-role">Co-Founder & CEO</p>
-            <h3 class="team-name">Celia Ahmed</h3>
-            <p class="team-desc">Bridging complex technical strategy with human-centered innovation.</p>
-            <div class="team-tag">
-              <i data-lucide="zap"></i>
-              <span>Chroma Vision</span>
-            </div>
-        </div>
-
-        <div class="team-card" data-category="Leadership"> <!-- <--- ضفت data-category -->
-            <div class="team-card-header">
-              <img src="images/omar1.jpeg" alt="Omar Mohamed" class="team-avatar">
-            </div>
-            <p class="team-role">Co-Founder & CTO</p>
-            <h3 class="team-name">Omar Mohamed</h3>
-            <p class="team-desc">Designing resilient distributed systems that handle millions of requests without a blink.</p>
-            <div class="team-tag">
-              <i data-lucide="zap"></i>
-              <span>Zero-Downtime Shift</span>
-            </div>
-        </div>
-
-        <div class="team-card" data-category="AI & Data"> <!-- <--- ضفت data-category -->
-            <div class="team-card-header">
-              <img src="images/salmaH.jpeg" alt="Salma Elhady" class="team-avatar">
-            </div>
-            <p class="team-role">Head of AI & Machine Learning</p>
-            <h3 class="team-name">Salma Elhady</h3>
-            <p class="team-desc">Fine-tuning neural architectures to deliver practical, enterprise-grade AI intelligence.</p>
-            <div class="team-tag">
-              <i data-lucide="zap"></i>
-              <span>Synapse Synthesis</span>
-            </div>
-        </div>
-
-        <div class="team-card" data-category="Engineering"> <!-- <--- ضفت data-category -->
-            <div class="team-card-header">
-              <img src="images/WhatsApp Image 2026-08-01 at 10.17.07 PM.jpeg" alt="Salwa Mohamed" class="team-avatar">
-            </div>
-            <p class="team-role">Fluid Camouflage</p>
-            <h3 class="team-name">Salwa Mohamed</h3>
-            <p class="team-desc">Crafting sub-second, visually hypnotic web applications with butter-smooth animations.</p>
-            <div class="team-tag">
-              <i data-lucide="zap"></i>
-              <span>Fluid Camouflage</span>
-            </div>
-        </div>
-
-        <div class="team-card" data-category="Engineering"> <!-- <--- ضفت data-category -->
-            <div class="team-card-header">
-              <img src="images/yassin.jpeg" alt="Yassin Mohamed" class="team-avatar">
-            </div>
-            <p class="team-role">Principal Backend & Security Lead</p>
-            <h3 class="team-name">Yassin Mohamed</h3>
-            <p class="team-desc">Fortifying applications with military-grade security while keeping APIs blazingly fast.</p>
-            <div class="team-tag">
-              <i data-lucide="zap"></i>
-              <span>Impenetrable Shield</span>
-            </div>
-        </div>
-
-        <div class="team-card" data-category="Design & UX"> <!-- <--- ضفت data-category -->
-            <div class="team-card-header">
-              <img src="images/hana.jpeg" alt="Hana Ahmed" class="team-avatar">
-            </div>
-            <p class="team-role">Head of UI/UX & Brand Design</p>
-            <h3 class="team-name">Hana Ahmed</h3>
-            <p class="team-desc">Transforming complex user workflows into delightful, effortless digital moments.</p>
-            <div class="team-tag">
-              <i data-lucide="zap"></i>
-              <span>Prismatic Polish</span>
-            </div>
-        </div>
-
-        <div class="team-card" data-category="Product & Strategy"> <!-- <--- ضفت data-category -->
-            <div class="team-card-header">
-              <img src="images/salmaE.jpeg" alt="Salma Emad" class="team-avatar">
-            </div>
-            <p class="team-role">Lead Mobile & Cross-Platform Lead</p>
-            <h3 class="team-name">Salma Emad</h3>
-            <p class="team-desc">Building native-feeling iOS and Android experiences from a single robust codebase..</p>
-            <div class="team-tag">
-              <i data-lucide="zap"></i>
-              <span>Pocket Morphing</span>
-            </div>
-        </div>
-
-        <div class="team-card" data-category="Engineering"> <!-- <--- ضفت data-category -->
-            <div class="team-card-header">
-              <img src="images/eyad2.jpeg" alt="Eyad Ahmed" class="team-avatar">
-            </div>
-            <p class="team-role">Senior DevOps & Cloud Infra Lead</p>
-            <h3 class="team-name">Eyad Ahmed</h3>
-            <p class="team-desc">Automating cloud infrastructure to deploy in seconds with enterprise reliability..</p>
-            <div class="team-tag">
-              <i data-lucide="zap"></i>
-              <span>Cloud Auto-Healing</span>
-            </div>
-        </div>
-
-        <div class="team-card" data-category="Design & UX"> <!-- <--- ضفت data-category -->
-            <div class="team-card-header">
-              <img src="images/logien.jpeg" alt="Logien Mohamed" class="team-avatar">
-            </div>
-            <p class="team-role">Creative Director & Motion Lead</p>
-            <h3 class="team-name">Logien Mohamed</h3>
-            <p class="team-desc">Breathes life into static interfaces with storytelling 3D models and interactive visual dynamics.</p>
-            <div class="team-tag">
-              <i data-lucide="zap"></i>
-              <span>Kinetic Pulse</span>
-            </div>
-        </div>
-      </div>
-    </section> 
-    
-    <!-- services -->
-    <section id="services" class="services-section">
-      <div class="container">
-        <div class="section-header">
-          <span class="sub-title">Our Capabilities</span>
-          <h2>Multi-Disciplinary Execution</h2>
-          <p>From custom-built websites and brand identities to photo & video editing, data analysis, and hands-on coding help for students.</p>
-        </div>
-
-        <div class="services-grid">
-          <div class="glass-card service-card">
-            <div class="service-icon"><i data-lucide="layout"></i></div>
-            <h3>Web Development</h3>
-            <p class="service-short">Custom websites and web apps built to look great and run fast on any device.</p>
-            <ul class="service-details-list">
-              <li><i data-lucide="check-circle-2" class="detail-check"></i> Responsive Websites & Landing Pages</li>
-              <li><i data-lucide="check-circle-2" class="detail-check"></i> Web Apps & Dashboards</li>
-              <li><i data-lucide="check-circle-2" class="detail-check"></i> Site Maintenance & Updates</li>
-            </ul>
-            <a href="#contact-us" class="btn btn-secondary btn-sm mt-auto open-contact-trigger">Discuss Service</a>
-          </div>
-
-          <div class="glass-card service-card">
-            <div class="service-icon"><i data-lucide="palette"></i></div>
-            <h3>Design & Branding</h3>
-            <p class="service-short">Logos, visual identities, and brand assets that make you instantly recognizable.</p>
-            <ul class="service-details-list">
-              <li><i data-lucide="check-circle-2" class="detail-check"></i> Logo & Brand Identity Design</li>
-              <li><i data-lucide="check-circle-2" class="detail-check"></i> Social Media & Marketing Graphics</li>
-              <li><i data-lucide="check-circle-2" class="detail-check"></i> Brand Style Guides</li>
-            </ul>
-            <a href="#contact-us" class="btn btn-secondary btn-sm mt-auto open-contact-trigger">Discuss Service</a>
-          </div>
-
-          <div class="glass-card service-card">
-            <div class="service-icon"><i data-lucide="image"></i></div>
-            <h3>Photo Editing</h3>
-            <p class="service-short">Retouching, color correction, and compositing that makes every photo shine.</p>
-            <ul class="service-details-list">
-              <li><i data-lucide="check-circle-2" class="detail-check"></i> Retouching & Color Grading</li>
-              <li><i data-lucide="check-circle-2" class="detail-check"></i> Background Removal & Compositing</li>
-              <li><i data-lucide="check-circle-2" class="detail-check"></i> Product & Portrait Editing</li>
-            </ul>
-            <a href="#contact-us" class="btn btn-secondary btn-sm mt-auto open-contact-trigger">Discuss Service</a>
-          </div>
-
-          <div class="glass-card service-card">
-            <div class="service-icon"><i data-lucide="film"></i></div>
-            <h3>Video Editing</h3>
-            <p class="service-short">Polished edits, transitions, and effects for social, promo, and personal projects.</p>
-            <ul class="service-details-list">
-              <li><i data-lucide="check-circle-2" class="detail-check"></i> Cutting, Transitions & Color Grading</li>
-              <li><i data-lucide="check-circle-2" class="detail-check"></i> Motion Graphics & Subtitles</li>
-              <li><i data-lucide="check-circle-2" class="detail-check"></i> Short-Form & Social Reels</li>
-            </ul>
-            <a href="#contact-us" class="btn btn-secondary btn-sm mt-auto open-contact-trigger">Discuss Service</a>
-          </div>
-
-          <div class="glass-card service-card">
-            <div class="service-icon"><i data-lucide="bar-chart-3"></i></div>
-            <h3>Data Analysis</h3>
-            <p class="service-short">Turning raw spreadsheets and datasets into clear insights and visuals.</p>
-            <ul class="service-details-list">
-              <li><i data-lucide="check-circle-2" class="detail-check"></i> Data Cleaning & Visualization</li>
-              <li><i data-lucide="check-circle-2" class="detail-check"></i> Excel, SQL & Python Analysis</li>
-              <li><i data-lucide="check-circle-2" class="detail-check"></i> Reports & Dashboards</li>
-            </ul>
-            <a href="#contact-us" class="btn btn-secondary btn-sm mt-auto open-contact-trigger">Discuss Service</a>
-          </div>
-
-          <div class="glass-card service-card">
-            <div class="service-icon"><i data-lucide="graduation-cap"></i></div>
-            <h3>Student Coding Help</h3>
-            <p class="service-short">Projects, algorithms, and debugging support to help students finish strong.</p>
-            <ul class="service-details-list">
-              <li><i data-lucide="check-circle-2" class="detail-check"></i> Class Projects & Assignments</li>
-              <li><i data-lucide="check-circle-2" class="detail-check"></i> Algorithm Design & Explanation</li>
-              <li><i data-lucide="check-circle-2" class="detail-check"></i> Debugging & Fixing Code Errors</li>
-            </ul>
-            <a href="#contact-us" class="btn btn-secondary btn-sm mt-auto open-contact-trigger">Discuss Service</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- FAQ -->
-    <section id="faq" class="faq-section">
-      <div class="container">
-        <div class="section-header">
-          <span class="sub-title">GOT QUESTIONS?</span>
-          <h2>Frequently Asked Questions</h2>
-          <p>Everything you need to know about engaging Chameleon Works.</p>
-        </div>
-
-        <div class="faq-accordion">
-          
-          <details class="faq-item glass-card" open>
-            <summary class="faq-question">
-              <span data-key="faq_q1">Why are you called Chameleon Works?</span>
-              <i data-lucide="chevron-down" class="icon"></i>
-            </summary>
-            <div class="faq-answer">
-              <p>Like a chameleon adapting to any terrain, our startup adapts instantly to your industry, tech stack, and strategic goals. We don't push one rigid technology—we shape-shift our expertise to build what's best for your product.</p>
-            </div>
-          </details>
-
-          <details class="faq-item glass-card">
-            <summary class="faq-question">
-              <span data-key="faq_q1">How does working with an elite 9-person team benefit me?</span>
-              <i data-lucide="chevron-down" class="icon"></i>
-            </summary>
-            <div class="faq-answer">
-              <p>No junior developers, no account managers, no delays. You work directly with 10 senior specialists. That means faster decisions, cleaner code, and MVP in 3-6 weeks instead of 6 months.</p>
-            </div>
-          </details>
-
-          <details class="faq-item glass-card">
-            <summary class="faq-question">
-              <span data-key="faq_q1">What is your typical project timeline?</span>
-              <i data-lucide="chevron-down" class="icon"></i>
-            </summary>
-            <div class="faq-answer">
-              <p>Discovery: 3 days. Design: 1 week. Development: 2-4 weeks. Launch: Week 6. We ship continuously so you see progress every few days.</p>
-            </div>
-          </details>
-
-          <details class="faq-item glass-card">
-            <summary class="faq-question">
-              <span data-key="faq_q1">Do you work with startups and enterprises?</span>
-              <i data-lucide="chevron-down" class="icon"></i>
-            </summary>
-            <div class="faq-answer">
-              <p>Yes. We’ve built MVPs for YC startups and re-architected systems for Fortune 500 companies. Our process scales up or down based on your needs.</p>
-            </div>
-          </details>
-
-        </div>
-      </div>
-    </section>
-
-<!-- Customer Reviews -->
-    <section id="customer-reviews" class="reviews-section">
-      <div class="container">
-        <div class="section-header">
-          <span class="sub-title">Customer Reviews</span>
-          <h2>What Our Clients Say</h2>
-          <p>Real feedback from founders and leaders who trusted Chameleon Works.</p>
-        </div>
-
-        <div class="reviews-grid">
-          
-          <div class="review-card glass-card">
-            <div class="stars">
-              <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
-            </div>
-            <p class="review-text">"Chameleon Works delivered our MVP in 4 weeks. The quality is insane and their 10-person team felt like an extension of our own. Best decision we made."</p>
-            <div class="review-author">
-              <img src="https://i.pravatar.cc/150?img=1" alt="Sarah Johnson" class="review-avatar">
-              <div>
-                <div class="review-name">Sarah Johnson</div>
-                <div class="review-role">CEO, TechNova</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="review-card glass-card">
-            <div class="stars">
-              <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
-            </div>
-            <p class="review-text">"No fluff, no junior devs. Direct access to senior architects. They re-architected our backend with Rust and cut our costs by 60%."</p>
-            <div class="review-author">
-              <img src="https://i.pravatar.cc/150?img=2" alt="Ahmed Khaled" class="review-avatar">
-              <div>
-                <div class="review-name">Ahmed Khaled</div>
-                <div class="review-role">CTO, FinEdge</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="review-card glass-card">
-            <div class="stars">
-              <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
-            </div>
-            <p class="review-text">"They don't just code. They think like founders. The AI integration they built for us increased user retention by 3x in 2 months."</p>
-            <div class="review-author">
-              <img src="https://i.pravatar.cc/150?img=3" alt="Emily Chen" class="review-avatar">
-              <div>
-                <div class="review-name">Emily Chen</div>
-                <div class="review-role">Product Lead, HealthAI</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="review-card glass-card">
-            <div class="stars">
-              <i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i>
-            </div>
-            <p class="review-text">"Compared to big agencies, Chameleon Works is 10x faster and 5x cheaper. And the communication? Direct Slack with the founders."</p>
-            <div class="review-author">
-              <img src="https://i.pravatar.cc/150?img=4" alt="Omar Farouk" class="review-avatar">
-              <div>
-                <div class="review-name">Omar Farouk</div>
-                <div class="review-role">Founder, LogiFlow</div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- cotact us -->
-    <section id="contact-us" class="contact-section">
-    <div class="container">
-      <div class="section-header">
-        <span class="sub-title">Get In Touch</span>
-        <h2>Let's Shape-Shift Your Product</h2>
-        <p>Schedule a 30-minute technical discovery session directly with our founders & core leads.</p>
-      </div>
-
-      <div class="contact-box glass-card">
-        <form class="contact-form" id="contactForm">
-          <div class="prefill-pill hidden" id="prefillMemberPill">
-            <span>Direct Request for: <strong id="prefillMemberName"></strong></span>
-          </div>
-
-          <div class="prefill-pill estimate-pill hidden" id="prefillEstimatePill">
-            <span>Estimator Attached: <strong id="prefillEstimateText"></strong></span>
-          </div>
-
-          <div class="form-row">
-            <div class="form-group">
-              <label>Your Name *</label>
-              <div class="input-with-icon">
-                <i data-lucide="user"></i>
-                <input type="text" required placeholder="e.g. Alex Morgan" id="inputName" />
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label>Work Email *</label>
-              <div class="input-with-icon">
-                <i data-lucide="mail"></i>
-                <input type="email" required placeholder="alex@company.com" id="inputEmail" />
-              </div>
-            </div>
-          </div>
-
-          <div class="form-group">
-            <label>Company / Startup Name</label>
-            <div class="input-with-icon">
-              <i data-lucide="building"></i>
-              <input type="text" placeholder="e.g. NexaTech Labs" id="inputCompany" />
-            </div>
-          </div>
-
-          <div class="form-group">
-            <label>Project Goals & Requirements *</label>
-            <textarea required rows="4" placeholder="Tell us about your project vision, target timeline, or tech challenges..." id="inputDetails"></textarea>
-          </div>
-
-          <button type="submit" class="btn btn-primary w-full mt-2">
-            <span>Send Direct Message to Team</span>
-            <i data-lucide="send"></i>
+<body id="home-page">
+  <header>
+    <!-- nav bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow">
+      <div class="container-fluid fw-bold">
+          <a class="navbar-brand text-primary fw-bold fs-2" href="#">Cub<span class="text-warning">Mart</span></a>
+          <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
           </button>
-        </form>
-
-        <div class="success-toast hidden" id="successToast">
-          <i data-lucide="check-circle-2" class="success-icon"></i>
-          <h3>Message Received!</h3>
-          <p>Thank you! CEO CELIA AHMED or CTO OMAR MOHAMED will reach out within 2 business hours to schedule your free 30-minute discovery call.</p>
+        <div class="collapse navbar-collapse p-3" id="navbarNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5 text-end">
+            <li class="nav-item px-3"><a class="nav-link text-primary" href="#home-page">Home</a></li>
+            <li class="nav-item px-3"><a class="nav-link text-primary" href="#why-us">Why Us</a></li>
+            <li class="nav-item dropdown px-3">
+              <a class="nav-link dropdown-toggle text-primary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
+              <ul class="dropdown-menu px-3">
+                <li><a class="dropdown-item text-primary" href="#electronics">Electronics</a></li>
+                <li><a class="dropdown-item text-primary" href="#fashion">Fashion</a></li>
+                <li><a class="dropdown-item text-primary" href="#home-devices">Home Devices</a></li>
+              </ul>
+            </li>
+            <li class="nav-item px-3"><a class="nav-link text-primary" href="#product-spotlight">Spotlights</a></li>
+            <li class="nav-item px-3"><a class="nav-link text-primary" href="#">🛒 Start Order</a></li>
+            <li class="nav-item px-3"><a class="nav-link text-primary" href="#contact">Contact</a></li>
+          </ul>
         </div>
       </div>
-    </div>
+    </nav>
+
+    <!-- hero -->
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="text-center">
+          <h1 class="animate-title">Shop Smarter With Cub<span class="text-warning">Mart</span></h1>
+          <p class="animate-subtitle fs-5">Everything you need, delivered to your door.</p>
+          <a href="#categories" class="btn btn-primary btn-lg animate-btn">Browser Products →</a>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <!-- why us -->
+    <section id="why-us" class="py-5 why-us">
+      <div class="container">
+        <h2 class="mb-5 text-primary text-center" style="font-weight: 700; text-shadow:0 2px 4px rgba(13, 110, 253,0.3)">Why Shop With Us?</h2>
+        <div class="d-flex justify-content-center gap-4 flex-wrap">
+          <div class="responsive-why-us">
+            <div class="card card-whyus h-100 text-center border-1 p-4 shadow">
+              <h3>🛵</h3>
+              <h5 class="text-primary">Fast Delivery</h5>
+              <p class="text-muted">Get your orders delivered within 24 hours.</p>
+            </div>
+          </div>
+          <div class="responsive-why-us">
+            <div class="card card-whyus h-100 text-center border-1 p-4 shadow">
+              <h3>⭐</h3>
+              <h5 class="text-primary">Quality Products</h5>
+              <p class="text-muted">We guarantee the best quality for all items.</p>
+            </div>
+          </div>
+          <div class="responsive-why-us">
+            <div class="card card-whyus h-100 text-center border-1 p-4 shadow">
+              <h3>✅</h3>
+              <h5 class="text-primary">24/7 support</h5>
+              <p class="text-muted">We are available 24/7 to answer your questions.</p>
+            </div>
+          </div>
+          <div class="responsive-why-us">
+            <div class="card card-whyus h-100 text-center border-1 p-4 shadow">
+              <h3>🔒</h3>
+              <h5 class="text-primary">Secure Payment</h5>
+              <p class="text-muted">Your payment information is 100% secure.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- FOOTER -->
-    <footer class="site-footer">
-      <div class="container">
-        <div class="footer-grid">
-          
-          <div class="footer-col footer-brand">
-            <a href="#home" class="footer-logo d-flex align-items-center gap-2">
-              <img src="images/WhatsApp_Image_2026-08-01_at_3.43.49_PM-removebg-preview.png" alt="logo" width="45">
-              <span class="logo-title">Chameleon Works</span>
-            </a>
-            <p class="footer-desc">Elite 9-person team of senior builders. We shape-shift to deliver high-velocity digital products.</p>
-            <div class="social-links" style="display:flex; gap:15px; margin-top:20px;">
-              <a href="https://www.linkedin.com/in/chameleon-works-official-a68404426" target="_blank" style="font-size:24px; color:#297BF0;"><i class="fa-brands fa-linkedin"></i></a>
-              <a href="https://youtube.com/@chameleonworks2024" target="_blank" style="font-size:24px; color:#297BF0;"><i class="fa-brands fa-youtube"></i></a>
-              <a href="https://www.facebook.com/share/1UnmGu4mxz/" target="_blank" style="font-size:24px; color:#297BF0;"><i class="fa-brands fa-facebook"></i></a>
-              <a href="mailto:Chameleonworks2024@gmail.com" style="font-size:24px; color:#297BF0;"><i class="fa-solid fa-envelope"></i></a>
-              <a href="https://www.instagram.com/chameleon_work_official" target="_blank" style="font-size:24px; color:#297BF0;"><i class="fa-brands fa-instagram"></i></a>
+    <!-- categories -->
+  <section id="categories" class="py-4 bg-light">
+    <div class="container text-center">
+      <h2 class="mb-5 text-primary" style="font-weight: 700; text-shadow:0 2px 4px rgba(13, 110, 253,0.3)">Shop By Category</h2>
+      <div class="d-flex justify-content-center flex-wrap gap-3">
+        <div class="responsive-cat"><a href="#electronics" class="btn btn-outline-primary rounded-4 w-100">Electronics</a></div>
+        <div class="responsive-cat"><a href="#fashion" class="btn btn-outline-primary rounded-4 w-100">Fashion</a></div>
+        <div class="responsive-cat"><a href="#home-devices" class="btn btn-outline-primary rounded-4 w-100">Home Devices</a></div>
+        <div class="responsive-cat"><a href="#accesories" class="btn btn-outline-primary rounded-4 w-100">Accesories</a></div>
+        <div class="responsive-cat"><a href="#sale" class="btn btn-outline-primary rounded-4 w-100">Sale</a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- electronics -->
+  <section id="electronics" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="mb-4 text-primary">Electronics</h2>
+      <div class="row">
+          <div class="col-lg-4 col-md-6 col-12 mb-4">
+            <div class="card-hover card text-center h-100 position-relative">
+              <span class="edit badge bg-warning">Best Seller</span>
+              <img src="img/highperformance-gaming-laptop-with-rgb-backlit-keyboard_1079150-150039.avif" alt="laptop" class="img-fluid">
+              <div class="p-3 d-flex flex-column flex-grow-1">
+                <h3 class="text-primary">Gaming Laptop</h3>
+                <p class="fs-4 fw-bold">$1200</p>
+                <a href="#details-1" class="btn btn-primary mt-auto">View Details</a>
+              </div>
             </div>
           </div>
 
-          <!-- العمود 2: لينكات -->
-          <div class="footer-col">
-            <h4>Quick Links</h4>
-            <ul>
-              <li><a href="#why-us">Why Us</a></li>
-              <li><a href="#team">Our Team</a></li>
-              <li><a href="#services">Services</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
+          <div class="col-lg-4 col-md-6 col-12 mb-4">
+            <div class="card-hover card text-center h-100 position-relative">
+              <img src="img/computer-rgb-gaming-mouse-3d-realistic-ai-generative-photo.jpg" alt="gaming mouse" class="img-fluid">
+              <div class="p-3 d-flex flex-column flex-grow-1">
+                <h3 class="text-primary">Gaming Mouse</h3>
+                <p class="fs-4 fw-bold">$35</p>
+                <a href="#details-2" class="btn btn-primary mt-auto">View Details</a>
+              </div>
+            </div>
           </div>
 
-          <!-- العمود 3: خدمات -->
-          <div class="footer-col">
-            <h4>Our Services</h4>
-            <ul>
-              <li><a href="#services">Web Development</a></li>
-              <li><a href="#services">Design & Branding</a></li>
-              <li><a href="#services">Photo & Video Editing</a></li>
-              <li><a href="#services">Data Analysis</a></li>
-            </ul>
+          <div class="col-lg-4 col-md-6 col-12 mb-4">
+            <div class="card-hover card text-center h-100 position-relative">
+              <span class="edit badge bg-success">New</span>
+              <img src="img/OIP (2).webp" alt="headphone" class="img-fluid">
+              <div class="p-3 d-flex flex-column flex-grow-1">
+                <h3 class="text-primary">Wireless Headphones</h3>
+                <p class="fs-4 fw-bold">$400</p>
+                <a href="#details-3" class="btn btn-primary mt-auto">View Details</a>
+              </div>
+            </div>
+          </div>
+      </div>
+      <a href="#categories" class="btn btn-outline-primary p-3 mt-2">Back to categories</a>
+    </div>
+  </section>
+
+  <!-- fashion -->
+  <section id="fashion" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="mb-4 text-primary">Fashion</h2>
+      <div class="row">
+          <div class="col-lg-4 col-md-6 col-12 mb-4">
+            <div class="card-hover card text-center h-100 position-relative">
+              <img src="img/OIP (5).webp" alt="Tshirt" class="img-fluid">
+              <div class="p-3 d-flex flex-column flex-grow-1">
+                <h3 class="text-primary">Cotton T-shirt</h3>
+                <p class="fs-4 fw-bold">$25</p>
+                <a href="#details-4" class="btn btn-primary mt-auto">View Details</a>
+              </div>
+            </div>
           </div>
 
-          <!-- العمود 4: CTA -->
-          <div class="footer-col">
-            <h4>Start a Project</h4>
-            <p>Book a free 30-min discovery call with our founders.</p>
-            <a href="#contact-us" class="btn btn-footer">Get In Touch</a>
+          <div class="col-lg-4 col-md-6 col-12 mb-4">
+            <div class="card-hover card text-center h-100 position-relative">
+              <span class="edit badge bg-danger">Sale-20%</span>
+              <img src="img/best-true-religion-jeans-304303-1670351274032-fb.jpg" alt="jeans" class="img-fluid">
+              <div class="p-3 d-flex flex-column flex-grow-1">
+                <h3 class="text-primary">Blue Jeans</h3>
+                <p class="fs-4 fw-bold">$60</p>
+                <a href="#details-5" class="btn btn-primary mt-auto">View Details</a>
+              </div>
+            </div>
           </div>
 
+          <div class="col-lg-4 col-md-6 col-12 mb-4">
+            <div class="card-hover card text-center h-100 position-relative">
+              <img src="img/OIP (6).webp" alt="skirt" class="img-fluid">
+              <div class="p-3 d-flex flex-column flex-grow-1">
+                <h3 class="text-primary">Skirt</h3>
+                <p class="fs-4 fw-bold">$120</p>
+                <a href="#details-6" class="btn btn-primary mt-auto">View Details</a>
+              </div>
+            </div>
+          </div>
+      </div>
+      <a href="#categories" class="btn btn-outline-primary p-3 mt-2">Back to categories</a>
+    </div>
+  </section>
+
+  <!-- home devices -->
+  <section id="home-devices" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="mb-4 text-primary">Home Devices</h2>
+      <div class="row">
+          <div class="col-lg-4 col-md-6 col-12 mb-4">
+            <div class="card-hover card text-center h-100 position-relative">
+              <span class="edit badge bg-success">New</span>
+              <img src="img/download.webp" alt="Television" class="img-fluid">
+              <div class="p-3 d-flex flex-column flex-grow-1">
+                <h3 class="text-primary">Television</h3>
+                <p class="fs-4 fw-bold">$1000</p>
+                <a href="#details-7" class="btn btn-primary mt-auto">View Details</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-12 mb-4">
+            <div class="card-hover card text-center h-100 position-relative">
+              <img src="img/ee0ed8e3e2075c6a82c661228d99ec49.jpg" alt="fridge" class="img-fluid">
+              <div class="p-3 d-flex flex-column flex-grow-1">
+                <h3 class="text-primary">Fridge</h3>
+                <p class="fs-4 fw-bold">$500</p>
+                <a href="#details-8" class="btn btn-primary mt-auto">View Details</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-12 mb-4">
+            <div class="card-hover card text-center h-100 position-relative">
+              <img src="img/th.jpg" alt="microwave" class="img-fluid">
+              <div class="p-3 d-flex flex-column flex-grow-1">
+                <h3 class="text-primary">Microwave</h3>
+                <p class="fs-4 fw-bold">$50</p>
+                <a href="#details-9" class="btn btn-primary mt-auto">View Details</a>
+              </div>
+            </div>
+          </div>
+      </div>
+      <a href="#categories" class="btn btn-outline-primary p-3 mt-2">Back to categories</a>
+    </div>
+  </section>
+
+  <!-- product details  -->
+  <section id="product-details" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5 text-primary" style="font-weight: 700; text-shadow:0 2px 4px rgba(13, 110, 253,0.3)">Product Details</h2>
+      
+      <div id="details-1" class="details row mb-5 align-items-center">
+        <div class="col-md-6">
+          <img src="img/highperformance-gaming-laptop-with-rgb-backlit-keyboard_1079150-150039.avif" class="img-fluid rounded shadow">
         </div>
-
-        <div class="footer-bottom">
-          <p>© 2026 Chameleon Works. All rights reserved. Built with ❤️ by the 9 Champions.</p>
+        <div class="col-md-6">
+          <h3 class="text-primary">Gaming Laptop</h3>
+          <p>RTX 3060, 16GB RAM, 1TB SSD, 144Hz RGB Keyboard. Perfect for gaming and work.</p>
+          <p class="fs-3 fw-bold">1200 $</p>
+          <button class="btn btn-primary btn-lg">Add to Cart</button>
         </div>
       </div>
-    </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="main.js"></script>
+      <div id="details-2" class="details row mb-5 align-items-center flex-row-reverse">
+        <div class="col-md-6">
+          <img src="img/computer-rgb-gaming-mouse-3d-realistic-ai-generative-photo.jpg" class="img-fluid rounded shadow">
+        </div>
+        <div class="col-md-6">
+          <h3 class="text-primary">Gaming Mouse</h3>
+          <p>RGB Lighting, 16000 DPI, 7 Programmable Buttons. Ultra light and precise.</p>
+          <p class="fs-3 fw-bold">35 $</p>
+          <button class="btn btn-primary btn-lg">Add to Cart</button>
+        </div>
+      </div>
+
+      <div id="details-3" class="details row mb-5 align-items-center">
+        <div class="col-md-6">
+          <img src="img/OIP (2).webp" class="img-fluid rounded shadow">
+        </div>
+        <div class="col-md-6">
+          <h3 class="text-primary">Wireless Headphones</h3>
+          <p>Noise Cancelling, 30h Battery, Bluetooth 5.2, Deep Bass Sound.</p>
+          <p class="fs-3 fw-bold">400 $</p>
+          <button class="btn btn-primary btn-lg">Add to Cart</button>
+        </div>
+      </div>
+
+      <div id="details-4" class="details row mb-5 align-items-center flex-row-reverse">
+        <div class="col-md-6">
+          <img src="img/OIP (5).webp" class="img-fluid rounded shadow">
+        </div>
+        <div class="col-md-6">
+          <h3 class="text-primary">Cotton T-shirt</h3>
+          <p>100% Cotton, Breathable, Available in all sizes. Comfortable for daily wear.</p>
+          <p class="fs-3 fw-bold">25 $</p>
+          <button class="btn btn-primary btn-lg">Add to Cart</button>
+        </div>
+      </div>
+
+      <div id="details-5" class="details row mb-5 align-items-center">
+        <div class="col-md-6">
+          <img src="img/best-true-religion-jeans-304303-1670351274032-fb.jpg" class="img-fluid rounded shadow">
+        </div>
+        <div class="col-md-6">
+          <h3 class="text-primary">Blue Jeans</h3>
+          <p>Slim Fit, Premium Denim, Durable stitching. Perfect for any occasion.</p>
+          <p class="fs-3 fw-bold">60 $</p>
+          <button class="btn btn-primary btn-lg">Add to Cart</button>
+        </div>
+      </div>
+
+      <div id="details-6" class="details row mb-5 align-items-center flex-row-reverse">
+        <div class="col-md-6">
+          <img src="img/OIP (6).webp" class="img-fluid rounded shadow">
+        </div>
+        <div class="col-md-6">
+          <h3 class="text-primary">Skirt</h3>
+          <p>Elegant Design, Light Fabric, Perfect for summer and casual outings.</p>
+          <p class="fs-3 fw-bold">120 $</p>
+          <button class="btn btn-primary btn-lg">Add to Cart</button>
+        </div>
+      </div>
+
+      <div id="details-7" class="details row mb-5 align-items-center">
+        <div class="col-md-6">
+          <img src="img/download.webp" class="img-fluid rounded shadow">
+        </div>
+        <div class="col-md-6">
+          <h3 class="text-primary">Television</h3>
+          <p>55" 4K Smart TV, HDR, Built-in Netflix & YouTube. Cinematic experience at home.</p>
+          <p class="fs-3 fw-bold">1000 $</p>
+          <button class="btn btn-primary btn-lg">Add to Cart</button>
+        </div>
+      </div>
+
+      <div id="details-8" class="details row mb-5 align-items-center flex-row-reverse">
+        <div class="col-md-6">
+          <img src="img/ee0ed8e3e2075c6a82c661228d99ec49.jpg" class="img-fluid rounded shadow">
+        </div>
+        <div class="col-md-6">
+          <h3 class="text-primary">Fridge</h3>
+          <p>Double Door, 450L Capacity, No Frost Technology. Energy efficient.</p>
+          <p class="fs-3 fw-bold">500 $</p>
+          <button class="btn btn-primary btn-lg">Add to Cart</button>
+        </div>
+      </div>
+
+      <div id="details-9" class="details row mb-5 align-items-center">
+        <div class="col-md-6">
+          <img src="img/th.jpg" class="img-fluid rounded shadow">
+        </div>
+        <div class="col-md-6">
+          <h3 class="text-primary">Microwave</h3>
+          <p>25L Capacity, 10 Power Levels, Grill Function. Fast and easy cooking.</p>
+          <p class="fs-3 fw-bold">50 $</p>
+          <button class="btn btn-primary btn-lg">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- spotlight -->
+  <section id="product-spotlight" class="py-5 bg-light">
+    <h2 class="text-primary text-center mb-5" style="font-weight: 700; text-shadow:0 2px 4px rgba(13, 110, 253,0.3)">Products Spotlight</h2>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 mb-4 ">
+          <div class="card-spotlight border border-1 rounded-3 border-primary p-4 d-flex align-items-center">
+            <div class="bg-light rounded-3 p-4 me-4">
+              <img src="img/6614508981abe8164238a936-linsy-58-w-loveseat-sofa-small-couch.jpg" alt="sofa">
+            </div>
+            <div>
+              <h4 class="fw-bold">Sofa</h4>
+              <p class="text-muted mb-2">Modern 2-seater sofa with sofa cushioms and elegant design. Perfect for your living room.</p>
+              <p class="fs-4 fw-bold text-warning">2200$</p>
+              <button class="btn btn-primary btn-lg">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 mb-4 ">
+          <div class="card-spotlight border border-1 rounded-3 border-primary p-4 d-flex align-items-center">
+            <div class="bg-light rounded-3 p-4 me-4">
+              <img src="img/OIP.webp" alt="hat">
+            </div>
+            <div>
+              <h4 class="fw-bold">Hat</h4>
+              <p class="text-muted mb-2">Stylish cowboy hat with decorative band. Lightweight and perfect for sunny days.</p>
+              <p class="fs-4 fw-bold text-warning">100$</p>
+              <button class="btn btn-primary btn-lg">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 mb-4 ">
+          <div class="card-spotlight border border-1 rounded-3 border-primary p-4 d-flex align-items-center">
+            <div class="bg-light rounded-3 p-4 me-4">
+              <img src="img/OIP (1).webp" alt="lamp">
+            </div>
+            <div>
+              <h4 class="fw-bold">Lamp</h4>
+              <p class="text-muted mb-2">Modern table lamp with minimalist design. Warm led light,perfect for your bedroom.</p>
+              <p class="fs-4 fw-bold text-warning">999$</p>
+              <button class="btn btn-primary btn-lg">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    </div>
+  </section> 
+
+  <!-- reviews -->
+  <section id="reviews" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5 fw-bold text-primary" style="font-weight: 700; text-shadow:0 2px 4px rgba(13, 110, 253,0.3)">What Our Customers Say</h2>
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-12 mb-4">
+          <div class="card card-review h-100 text-center p-4 border-1 shadow">
+            <div class="text-warning fs-3 mb-2">★★★</div>
+            <p class="fst-italic">Fast delivery and original products. CubMart is my #1 store!</p>
+            <h6 class="fw-bold mt-2 text-primary">Ahmed Mohamed</h6>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12 mb-4">
+          <div class="card card-review h-100 text-center p-4 border-1 shadow">
+            <div class="text-warning fs-3 mb-2">★★★</div>
+            <p class="fst-italic">Amazing price and support team. Highly recommend!</p>
+            <h6 class="fw-bold mt-2 text-primary">Sara Khaled</h6>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12 mb-4">
+          <div class="card card-review h-100 text-center p-4 border-1 shadow">
+            <div class="text-warning fs-3 mb-2">★★★</div>
+            <p class="fst-italic">Best place to buy gaming gear in Egypt. Quality is perfect</p>
+            <h6 class="fw-bold mt-2 text-primary">Omar Ahmed</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- contact us -->
+  <section id="contact" class="py-5 bg-light">
+    <div class="container my-3">
+      <div class="row g-5">
+        <div class="col-lg-8">
+          <h2 class="fw-bold text-primary mb-3">Contact Us</h2>
+          <fieldset class="custom-fielset p-4 rounded-3">
+            <form>
+              <label for="name" class="fw-bold">Full Name</label>
+              <input type="text" id="name" name="full-name" class="form-control mb-3" placeholder="Enter Your Name.." required>
+              <label for="email" class="fw-bold">Email Address</label>
+              <input type="email" id="email" name="email" class="form-control mb-3" placeholder="Enter Your Email.." required>
+              <label for="message" class="fw-bold">Message</label>
+              <textarea id="message" name="message" class="form-control mb-3" rows="4" placeholder="Your Message.." required></textarea>
+              <button class="btn btn-primary w-100" type="submit">Subscribe</button>
+          </form>
+          </fieldset>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer class="bg-dark text-white pt-5 pb-4 mt-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 mb-3">
+          <h5 class="fw-bold">Cub<span class="text-warning">Mart</span></h5>
+          <p class="text-white">Your trusted online store for electronics, fashion and home devices</p>
+        </div>
+        <div class="col-md-3 mb-3">
+          <h5 class="fw-bold">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#home" class="text-white text-decoration-none">Home</a>
+            </li>
+            <li>
+              <a href="#why-us" class="text-white text-decoration-none">Categories</a>
+            </li>
+            <li>
+              <a href="#product-spotlight" class="text-white text-decoration-none">Spotlight</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-3">
+          <h5 class="fw-bold">Categories</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#electronics" class="text-white text-decoration-none">Electronics</a>
+            </li>
+            <li>
+              <a href="#fashion" class="text-white text-decoration-none">Fashion</a>
+            </li>
+            <li>
+              <a href="#home-devices" class="text-white text-decoration-none">Home Devices</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-3">
+          <h5 class="fw-bold">Contact Info</h5>
+          <p class="text-white mb-1">Email: support@cubmart.com</p>
+          <p class="text-white mb-1">Phone: 01205895124</p>
+          <p class="text-white mb-1">Location: Cairo, Egypt</p>
+        </div>
+      </div>
+    </div>
+      <hr class="border-secondary">
+      <p class="text-center text-white mb-0">2026 Cub<span class="text-warning">Mart</span>. All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
